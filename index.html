@@ -16,20 +16,25 @@
 		<main class="mars-current-weather">
 			<h1 class="main-title">Latest weather at elysium plantitia</h1>
 			<div class="date">
-				<h2 class="section-title section-title--date">Sol 377</h2>
-				<p class="date-day">September 18</p>
+				<h2 class="section-title section-title--date">
+					Sol <span data-current-sol></span>
+				</h2>
+				<p class="date-day" data-current-date></p>
 			</div>
 			<div class="temp">
 				<h2 class="section-title">Temperature</h2>
-				<p class="high__low">High: -20 °C</p>
-				<p class="high__low">Low:- 120 °C</p>
+				<p class="high__low">High: <span data-current-temp-high></span>°C</p>
+				<p class="high__low">Low: <span data-current-temp-low></span>°C</p>
 			</div>
 			<div class="wind">
 				<h2 class="section-title">WInd</h2>
-				<p class="high__low speed">75 kph</p>
+				<p class="high__low speed">
+					<span data-wind-speed></span>
+					kph
+				</p>
 				<div class="wind__direction">
-					<p class="sr-only">45 deg</p>
-					<div class="wind__arrow"></div>
+					<p class="sr-only" data-wind-direction-text></p>
+					<div class="wind__arrow" data-wind-direction-arrow></div>
 				</div>
 			</div>
 			<div class="info">
